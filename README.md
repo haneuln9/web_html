@@ -16,3 +16,5 @@ ol, ul, li, dl,dt,dd
 # 26/06/23 
 
 a href=, ./, ../, html:5+tap, meta:kw+tap, meta:desc+tap
+
+# 26/06/27
