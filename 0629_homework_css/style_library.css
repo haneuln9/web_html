@@ -1,0 +1,10 @@
+/*head>h_top_bg*/
+header {}
+header #h_top_bg {}
+header #h_top_bg .h_top {}
+header #h_top_bg .h_top .top_left {}
+header #h_top_bg .h_top .top_right {}
+header #h_top_bg .h_top .top_right a {}
+/*h_btm_bg*/
+header #h_btm_bg {}
+header #h_btm_bg {}
