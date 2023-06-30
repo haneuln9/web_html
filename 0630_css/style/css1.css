@@ -1,0 +1,62 @@
+/*로컬글꼴 연결법*/
+/*웹글꼴 연결법*/
+/*구글폰트접속->원하는 글꼴 선택->ling or import 글꼴주소 가져오기->font-family글꼴연결*/
+dl {
+    font-size: 2rem;
+    font-size: 3rem;
+}
+dl dt {
+    background-color:rgba(0,255,255,0.7);
+    font-size: 1.5rem;
+    color:rgba(0,0,0,0.5);
+}
+dl dt em {
+    display:none;
+    background-color: #000;
+    color:#fff;
+    
+}
+dl dd {
+    background-color: blue;
+}
+dl dd span {
+    display:block;
+    background-color: #000;
+    color:#fff;
+}
+.f12 {
+    display:inline;
+    word-spacing:0.05em;
+    background-color:green;
+    letter-spacing:-0.02em;
+    font-size: 1.25rem;
+    line-height:1.5;/*1.0=100%*/
+    /*font-size의 px값 기준 설정이 불편할 경우 상대갑 기준으로 line-height를 처리한다.*/
+    /* font-size:1.25rem;
+    line-height:30px; */
+    /*line-height를 px로 작성할경우는 font-size의 px값 기준으로 정해짐*/
+}
+.overflow {
+    /*부모요소의 크기는 상관없음*/
+    width:400px;
+    font-size:1.25rem;
+    background-color:rgba(0,0,0,0.2);
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+#a {
+    background-color:orange;
+    width:500px; height:500px;
+    margin-left:50px;
+    padding-top:20px;
+}
+#a #b {
+    margin:0px 10px 0;
+    border:5px solid red;
+    font-size:5rem;
+    background-color:pink;
+    width:50%; height:300px;
+    /*자식의 크기를 작성시 중요사항*/
+    /*자식요소의 크기를 입력 시에는 반드시 부모 요소보다 작거나 같아야한다.*/
+}
