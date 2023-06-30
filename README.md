@@ -17,4 +17,8 @@ ol, ul, li, dl,dt,dd
 
 a href=, ./, ../, html:5+tap, meta:kw+tap, meta:desc+tap
 
-# 26/06/27
+# 26/06/30
+
+css
+line-height, letter-spacing, word-spacing, float 외
+css의 주요 태그들
