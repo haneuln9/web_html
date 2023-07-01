@@ -1,0 +1,109 @@
+
+body {
+    /* width:1440px;
+    margin:0 auto; */
+}
+/*header*/
+header {
+    background-color:green;
+    border-bottom:1px solid #aaa ;
+    width:1200px;
+    margin:0 auto;
+}
+header h1 {
+    float:left;
+    padding:11px 0 0 20px;
+}
+header h1 a {}
+header h1 a img {
+    width:50px;
+}
+/*nav*/
+header nav {
+    background-color:pink;
+    float:left;
+}
+header nav .gnb {
+    float:right;
+    padding:39px 20px 0 0;
+}
+header nav .gnb li {}
+header nav .gnb li a {}
+/*inb*/
+header .inb {background-color: hotpink;}
+header .inb li {
+    
+}
+header .inb li a {}
+/*main*/
+main {
+    background-color:aqua;
+    
+    
+}
+main .breadcrumbs_bg {
+    background-color:#f1f1f1;
+    border-bottom:1px solid #aaa;
+}
+main .breadcrumbs_bg .breadcrumbs {}
+main .breadcrumbs_bg .breadcrumbs a {}
+main .breadcrumbs_bg .breadcrumbs em {}
+/*contents_1*/
+main .contents_1 {
+    background-color:yellowgreen;
+}
+main .contents_1 h1 {background-color: #7e6eb6;}
+main .contents_1 h1 p {}
+/*contents_2*/
+main .contents_2 {
+    background-color:#f1f1f1;
+}
+main .contents_2 p {}
+/*contents_3*/
+main .contents_3 {
+    background-color:red;
+}
+main .contents_3 h2 {}
+main .contents_3 p {}
+/*main_bottom_g*/
+/*contents_goal*/
+main .main_bottom_g {
+    background-color: purple;
+}
+main .main_bottom_g .contents_goal {
+    background-color: #f1f1f1;
+}
+main .main_bottom_g .contents_goal h2 {}
+main .main_bottom_g .contents_goal .g_blue {}
+main .main_bottom_g .contents_goal .g_white {}
+main .main_bottom_g .contents_goal .g_yello {}
+
+/* main .main_bottom_g .contents_goal ul {}
+main .main_bottom_g .contents_goal ul li {} */
+/*contents_strategy*/
+main .main_bottom_g .contents_strategy {
+    background-color: #f1f1f1;
+}
+main .main_bottom_g .contents_strategy h2 {}
+main .main_bottom_g .contents_strategy ul {}
+main .main_bottom_g .contents_strategy ul li {}
+main .main_bottom_g .contents_strategy ul li h3 {}
+main .main_bottom_g .contents_strategy ul li p {}
+/*footer*/
+/*f_top_left*/
+footer {
+    background-color: yellow;
+}
+footer .f_top {}
+footer .f_top .f_top_left {
+    background-color: #fff;
+}
+footer .f_top .f_top_left a {}
+/*f_top_right*/
+footer .f_top .f_top_right {
+    background-color: #52883a;
+}
+footer .f_top .f_right a {}
+/*f_bt*/
+footer .f_bt {}
+footer .f_bt p {}
