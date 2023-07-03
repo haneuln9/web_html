@@ -1,0 +1,245 @@
+
+body {
+    /* width:1440px;
+    margin:0 auto; */
+}
+/*header*/
+header {
+    width:1220px;
+    height:92px;
+    margin:0 auto;
+}
+header h1 {
+    margin:11px 0 0 20px;
+    width:60px; height:70px;/*img의부모 px*/
+    float:left; 
+}
+header h1 a {}
+header h1 a img {
+    width:100%;
+    /*img태그는 인라인 요소지만 px크기를 절대값으로 가진다. 그래서 부모요소의 크기가 변경되도자동으로
+    따라오지 않기 때ㅑ문에 width:100% 속성으로 상대값으로 변경하여 부모의 px를 상대적으로 인식하게 
+    하는 경우가 많다.*/
+    
+}
+/*nav*/
+header nav {
+    margin:39px 0 0 234px;
+    float:left;
+}
+header nav .gnb {}
+header nav .gnb li {float:left;}
+header nav .gnb li a {
+    padding-right:40px; 
+    font-size: 1.2rem;
+}
+header nav .gnb li:last-child a {padding-right:0px;}
+/*활성화 페이지 기준(acrive class) 선택자 작성위치*/
+header nav .gnb .active a{
+    color:#36b4e5;
+}
+/*inb*/
+header .inb {
+float:right;
+margin:39px 20px 0 0 ;
+}
+header .inb li {
+    float:left; 
+    margin-right:20px;
+}
+header .inb li a {
+    font-size: 1.2rem;
+}
+/*모든 li에 반복적으로 들어간 margin또는  padding값에서 마지막 li의 여백값만 빼는 방법*/
+header .inb li:last-child {margin-right:0px;}
+header .inb li span{
+    width:1px; height:13px;
+    background-color:#aaa;
+    display:block;
+    margin-top:3px;
+}
+/*완료*/
+/*------------------------------------------------------------------------------*/
+/*main*/
+main {
+}
+main .breadcrumbs_bg {
+    background-color:#f1f1f1;
+    border-bottom:1px solid #aaa;
+    border-top:1px solid #aaa;
+    
+}
+main .breadcrumbs_bg .breadcrumbs {
+    width:1220px; height:58px;
+    margin:0 auto ;
+    text-align:right;
+    /*정렬대상이 모두 인라인 이고 한 방향 수평 정렬일 경우 정렬 대상의 부모 요소한테 (text-align)사용*/
+    padding:23px 20px 0 0;
+}
+main .breadcrumbs_bg .breadcrumbs a {}
+main .breadcrumbs_bg .breadcrumbs em {
+    font-weight:700;
+}
+/*-------------------------------------------*/
+/*contents_1*/
+main .contents_1 {
+    width:1200px; padding:70px 0;
+    margin:0 auto;
+    text-align:center;
+    
+}
+main .contents_1 h1 {
+    margin-bottom:40px; 
+    font-size:2.074rem;
+    letter-spacing:-0.02em;
+    font-weight: 500;
+    /* text-align:center; */
+}
+main .contents_1 p {
+    font-size:1.2rem;
+    letter-spacing:-0.02em;
+    /* text-align:center; */
+}
+/*contents_2*/
+main .contents_2 {
+    background-color:#f1f1f1;
+    width:1200px; padding:70px 0;
+    margin:0 auto;
+    text-align: center;
+}
+main .contents_2 p {
+    font-size: 1.2rem;
+    letter-spacing:-0.02em;
+    line-height:35px;
+}
+/*contents_3*/
+main .contents_3 {
+    width:1200px; padding:70px 0;
+    margin:0 auto;
+    text-align: center;
+    
+}
+main .contents_3 h2 {
+    color:#36b4e5;
+    font-size: 2.074rem;
+    margin-bottom:50px;
+    letter-spacing:-0.02;
+    font-weight:500%;
+}
+main .contents_3 p {
+    font-size:1.728rem;
+    line-height:45px;
+    letter-spacing:-0.02;
+}
+main .contents_3 p:nth-child(2) {
+    margin-bottom:45px;
+}
+
+/*main_bottom_g*/
+/*----------------------골모양----------------------------*/
+/*contents_goal*/
+main .main_bottom_g {
+    background-color: purple;
+}
+main .main_bottom_g .contents_goal {
+    background-color: #f1f1f1;
+    width:1200px; 
+    margin:0 auto;
+}
+main .main_bottom_g .contents_goal h2 {
+    font-size:2.074rem;
+    font-weight:500;
+    text-align: center;
+    padding:50px 0;
+}
+main .main_bottom_g .contents_goal ul {
+    
+    line-height:1.0;
+    text-align:center;
+}
+main .main_bottom_g .contents_goal ul .g_blue {
+    background-color: #36b4e5;
+    width:250px; height:250px;
+    border-radius:50%;
+    line-height:250px;
+    float:left;
+    margin-right:-20px;
+    
+}
+main .main_bottom_g .contents_goal ul .g_white {
+    background-color:#fff;
+    width:250px; height:250px;
+    border-radius:50%;
+    line-height:250px;
+    float:left;
+    margin-right:-20px;
+}
+main .main_bottom_g .contents_goal ul .g_yellow {
+    background-color: #f3c300;
+    width:250px; height:250px;
+    border-radius:50%;
+    line-height:250px;
+    float:left;
+    margin-right:-20px;
+}
+
+/* main .main_bottom_g .contents_goal ul {}
+main .main_bottom_g .contents_goal ul li {} */
+/*----------------------------------------5개원 --------------------------*/
+/*contents_strategy*/
+main .main_bottom_g .contents_strategy {
+    background-color: #f1f1f1;
+}
+main .main_bottom_g .contents_strategy h2 {
+    font-size:2.074rem;
+    font-weight: 500%;
+}
+main .main_bottom_g .contents_strategy ul {}
+main .main_bottom_g .contents_strategy ul li {}
+main .main_bottom_g .contents_strategy ul li h3 {}
+main .main_bottom_g .contents_strategy ul li p {}
+/*---------------------footer--------------------------------------------------------------*/
+/*f_top_left*/
+footer {    
+}
+footer .f_top {
+    width:1200px; height:60px;
+    margin:0 auto;
+
+}
+footer .f_top .f_top_left {
+    background-color: #fff;
+    float:left;
+    padding:23px 0 23px 20px;
+}
+footer .f_top .f_top_left a {
+    font-size:1.2rem;
+    letter-spacing:-0.02em;
+    font-weight:300%;
+    padding-right:30px;
+}
+/*f_top_right*/
+footer .f_top .f_top_right {
+    float:right;
+    padding:23px 20px 23px 0; 
+}
+footer .f_top .f_top_right a {
+    font-size:1.2rem;
+    letter-spacing:-0.02em;
+    font-weight:300%;
+    padding:10px 20px;
+    border:1px solid #aaa;
+}
+/*f_bt*/
+footer .f_bt {
+    width:1200px; padding:50px;
+    margin:0 auto;
+}
+footer .f_bt p {
+    font-size:1.2rem;
+    letter-spacing:-0.02em;
+    line-height:40px;    
+}
+footer .f_bt p:nth-child(2) {
+    padding:42px 0 0 0;
+}

@@ -1,0 +1,66 @@
+header {
+    width:1200px; height:92px;
+    margin:0 auto;
+}
+header h1 {
+    float:left;
+    width:60px; height:70px;
+    margin:11px 0 0 20px;
+}
+header h1 a {}
+header h1 a img {
+    width:100%;
+}
+/*끝*/
+/*h1까지*/
+header nav {
+    float:left;
+    margin:39px 0 0 234px;
+}
+header nav .gnb {
+    
+    font-size: 1.2rem;
+    float:left;
+}
+header nav .gnb .active {}
+header nav .gnb .active a {color:#36b4e5}
+header nav .gnb li {float:left;}
+header nav .gnb li a {
+    padding-right:40px;
+}
+header nav .gnb li:last-child a {padding:0px}
+/*inb*/
+header .inb {
+    float:right;
+    
+    padding:39px 20px 0 0;
+}
+header .inb li {
+    float:left;
+    margin-right:20px;
+}
+header .inb li a {font-size:1.2rem;}
+header .inb li span {
+    width:1px; height:13px;
+    background-color:#aaa;
+    display:block;
+    margin-top:3px;
+}
+header .inb li:last-child {margin:0px;}
+/*메인추가 해보기*/
+main {
+    background-color:aqua;
+    
+}
+main .breadcrumbs_bg {
+    background-color:#f1f1f1;
+    
+    
+}
+main .breadcrumbs_bg .breadcrumbs {
+    width:1200px; height:58px;
+}
+main .breadcrumbs_bg .breadcrumbs a {
+    font-size:1rem;
+}
+main .breadcrumbs_bg .breadcrumbs em {}
