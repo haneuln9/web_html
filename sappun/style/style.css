@@ -1,0 +1,104 @@
+/*all layout*/
+/* header .h_top .top,
+nav,
+main,
+footer {width:1300px; margin:0 auto;; } */
+/*------------------------------------*/
+header {
+}
+header .h_top {
+    background-color:yellow;
+    width:1440px; margin:0 auto;
+}
+header .h_top > p {
+    background-color: yellowgreen;
+    text-align:center;
+    height:36px;
+    padding:5px 0;
+}
+header .h_top > p a {
+    font-size:1.2rem;
+    font-weight:500;
+}
+/*---------------탑 로고 잠실 롯데월드몰-------------------*/
+header .h_top .top {
+    width:1300px; height:114px;
+    background-color:green;
+    margin:0 auto;
+    position:relative;
+}
+header .h_top .top .logo {
+    background-color:red;
+    width:129px; height:18px;
+    margin-left:585.5px;
+}
+header .h_top .top .logo a {}
+header .h_top .top .logo a img {width:100%;}
+header .h_top .top .gnb {
+    position:absolute;
+    right:0; top:0px;
+}
+/* header .h_top .top .gnb fieldset {}
+header .h_top .top .gnb fieldset legend {}
+header .h_top .top .gnb fieldset legend select {}
+header .h_top .top .gnb fieldset legend select option {} */
+header .h_top .top .gnb ul {
+}
+header .h_top .top .gnb ul li {
+    float:left;
+    position:relative;
+}
+header .h_top .top .gnb ul li a {}
+header .h_top .top .gnb ul li a img {
+    margin-left:15px;
+}
+header .h_top .top .gnb ul li a span {
+    position:absolute;
+    right:100px; top:25px;
+}
+/*--------------------------------nav*/
+header nav {
+    background-color: purple;
+    width:1300; height:50px;
+}
+header nav .menu {
+    
+    
+}
+header nav .menu li {}
+header nav .menu li a {float:left; text-align:center;}
+/*---------------------------------네비끝-----------------------*/
+/*-------------------베너 사진-------------------------*/
+main {}
+main .banner {}
+main .banner a {}
+main .banner a img {}
+/*---------------------------베너사진 끝---------------------*/
+main .weekly_best {}
+main .weekly_best h1 {}
+/*----------------------------------------weekly 이름 끝---------------*/
+/*-----------------------------------------상품------------------------*/
+main .weekly_best .product_1 {}
+main .weekly_best .product_1 li {}
+main .weekly_best .product_1 li a {}
+main .weekly_best .product_1 li a img {}
+/*------------------------------상품 설명--------------------------*/
+main .weekly_best .product_1 .explanation_1 {}
+main .weekly_best .product_1 .explanation_1 li {}
+main .weekly_best .product_1 .explanation_1 li h2 {}
+main .weekly_best .product_1 .explanation_1 li em {}
+main .weekly_best .product_1 .explanation_1 li span {}
+/*--------------------------------------상품설명 끝----------------------*/
+/*상품 2,3,4,5,6e들어가야함*/
+
+/*-----------------------------------하단 베너-------------------------------*/
+main .bt_banner {}
+main .bt_banner a {}
+main .bt_banner a img {}
+main .bt_banner h1 {}
+/*-------------------------하단베너 끝---------------------------*/
+/*---------------------------------------푸터-------------------------------*/
+footer {}
+footer .f_top {}
+footer .f_top a {}
+footer p {}
