@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>flex01</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <style>
+        #wrap {}
+        #wrap section {}
+        #wrap section h1 {}
+        #wrap section .contents {/*container*/
+            background:aqua;
+            /*flex 적용전 필수 준비사항*/
+            /*부모 container에 flex 설정값 적용하기*/
+            display:flex;/*flex 적용전 필수 준비 사항*/
+            /* flex-direction:row;
+            flex-wrap:nowrap; */
+            flex-flow:row nowrap;
+            justify-content:space-around;
+            align-content:space-around;
+            height:600px;
+            align-items:flex-start;
+        }
+        #wrap section .contents li {/*item*/
+            background:pink;
+            width: 200px; height:200px;
+            text-align:center; line-height:200px;
+            font-size:3rem; border-radius:20px;
+        }
+        /*flex의 메인축 , 교차축 개념*/
+        /*container(부모) item(자식) 개념으로 item이 정렬된 방향이 
+        메인축(main axis)
+        item이 가로지르는 방향이 교차축 (cross axis)
+        교차축이 어렵다면 메인축의 반대방향이라
+        암기 하기*/
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <section>
+            <h1>제목</h1>
+            <ul class="contents">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
