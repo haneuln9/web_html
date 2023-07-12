@@ -1,0 +1,118 @@
+/*rgb(95 3 128)*/
+/*1050px*/
+/*42 35 63 56 높이값*/
+/*all layout*/
+.h_banner_bg .h_banner, header {
+    background-color: skyblue;
+    width: 1050px;
+    margin:0 auto;
+}
+/*header-sprite 공통 그룹 선택자*/
+header .h_middle .logo h1, 
+header .h_middle .h_right a, 
+header .h_middle #search_frm fieldset #search_btn,
+header .btm .all_nav em {
+
+    background:url(../img/kurly_img/icon_set.png);
+    display:inline-block;
+    text-indent:-9999px;
+    width:36px; height:36px;
+}
+/*----------------------------------------------------------*/
+.h_banner_bg {background-color:rgb(95 3 128);}
+.h_banner_bg .h_banner {
+    height: 42px;
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+    justify-content:center;
+    position: relative;
+}
+.h_banner_bg .h_banner .adver {color:#fff; }
+.h_banner_bg .h_banner .adver em {font-weight:700;}
+.h_banner_bg .h_banner .close {
+    position:absolute;
+    right:0;
+}
+.h_banner_bg .h_banner .close .fa-xmark {
+    color: #fff;}
+/*------------------------------------------상단 광고 끝------------------------------------------*/
+header {}
+header .top_user {
+    background-color: orange;
+    height:35px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:flex-end;
+    align-items:center;
+}
+header .top_user .join {}
+header .top_user .login {}
+header .top_user .customer_service {}
+/*---------------------------top user 끝-----------------------------*/
+header .h_middle {
+    /* background-color: red; */
+    height: 63px;
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+    justify-content:space-between;
+}
+header .h_middle .logo {
+    display:flex;
+    flex-flow:row nowrap;
+}
+header .h_middle .logo h1 {
+    width:82px; height:36px;
+    background-position:0 -158px;
+}
+header .h_middle .logo a{margin:15px 0 0 15px;}
+header .h_middle .logo > a:nth-child(2) {font-weight:600; color:rgb(95 0 128);}
+header .h_middle .logo > a:nth-child(3) { color:rgb(101 101 101);}
+header .h_middle .logo h1 .market {}
+header .h_middle .logo h1 .beauty { }
+header .h_middle #search_frm {}
+header .h_middle #search_frm fieldset {
+    width:400px; height:40px;
+    border:1px solid rgb(95 0 128); border-radius: 6px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items: center;
+    padding-left:30px;
+    
+} 
+header .h_middle #search_frm fieldset #search_txt {
+    width:300px; height:18px;
+    color:#333;
+    font-size:16px;
+}
+header .h_middle #search_frm fieldset #search_btn {
+    background-position:-0px -50px;
+    margin:10px;
+}
+/*----------------------------------------------form끝---------------------*/
+header .h_middle .h_right {}
+header .h_middle .h_right a {}
+header .h_middle .h_right .map {background-position:0 -122px;}
+header .h_middle .h_right .like {background-position:0 -14px;}
+header .h_middle .h_right .cart {background-position:0 -86px;}
+/*-------------------------------------right 끝----------------*/
+header .btm {
+    height:56px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+}
+header .btm .all_nav {}
+header .btm .all_nav em {
+    width:16px; height:14px;
+    background-position:0 0;
+}
+header .btm .all_nav span {}
+header .btm nav {}
+header .btm nav a {}
+header .btm .delvery_info {}
+header .btm .delvery_info em {}
+header .btm .delvery_info span {}
