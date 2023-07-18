@@ -1,0 +1,309 @@
+.title_bg {
+    background:url(../images/bg1.png)
+    no-repeat fixed center 70%;
+    background-size:cover;
+    position:relative;
+    /* height:800px */
+}
+.title_bg::after {
+    content:'';/*필수 속성이라 둬야 하지만 들어갈 내용이 없어 빈따움표로 둠*/
+    display:block; height:800px;/*block 적용시 너비 100%적용*/
+    background: linear-gradient(180deg, rgba(255,255,255,0.7) 0%, rgba(0,0,0,0.7) 100%);
+    position:absolute;
+    left:0; top:0;
+    /*absolute 적용시 기본 block w100%는 inline처럼 변한다. */
+    width:100%;
+    z-index:90;
+}
+.title_bg #snow {
+    position:absolute;
+    left:0;top:0;
+    z-index:200; width:100%; height:800px;
+}
+.title_bg .title {
+    /* background:rgba(255,255,0,0.5 ); */
+    width:1200px; height:800px; margin:0 auto;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+    z-index:100; position:relative;
+    /*현재 after값이 title 위에잇어 글씨를 가려 x축을 변경하기 위해 입력하는것*/
+    /*-1~999까지 입력할 수 있으며 상대적으로 비교하여 입력하여야함*/
+    /*단 z-index를 입력전 포지션을 입력해주어야함 */
+}
+.title_bg .title .logo {
+    width:50px; height:50px;
+    align-self:flex-start;
+}
+.title_bg .title .logo img {width:100;}
+.title_bg .title h1 {
+    color:#fff;
+    font-size:3.157rem;
+    /* text-align:center; */
+    line-height:90px;
+    padding-top:170px;
+}
+.title_bg .title h1 em {
+    font-size:3.157rem;
+    font-weight:700;
+}
+.title_bg .title .btn {
+    border:1px solid none;
+    border-radius:50px;
+    padding:25px 60px;
+    margin-top:75px;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(255,147,0,1) 0%, rgba(255,114,0,1) 100%);
+}
+.title_bg .title .btn span {
+    font-size:1.777rem;
+    color:#fff;
+    letter-spacing:-0.04em;
+    margin-right:10px;
+
+}
+.title_bg .title .btn span img {width:20px; height:20px;}
+.title_bg .title .qa {
+    align-self:flex-end;
+    background: #222;
+    border:1px solid #2222;
+    border-radius:50px;
+    padding:15px 20px;
+    text-align:center;
+    margin-top:43px;
+
+}
+.title_bg .title .qa img {width:20px; height:20px;}
+.title_bg .title .qa span {
+    font-size:1.333rem;
+    color:#fff;
+    letter-spacing:-0.04em;
+    margin:0 10px 0 10px;
+}
+/*--------------------------------------------1타이틀 배경 끝------------------------------------*/
+/*----------------------------------------------quiz 영역----------------------------------------*/
+.quiz_bg {
+    background:url(../images/quiz_bg.png)
+    no-repeat  center 70%;
+    background-size:cover;
+}
+/* .quiz_bg .quiz > * {background: pink;} */
+.quiz_bg .quiz {
+    /* background:rgba(105, 212, 119, 0.5); */
+    width:1200px; margin:0 auto; 
+    padding:100px 0;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+}
+.quiz_bg .quiz .left {}
+.quiz_bg .quiz .left h2 {
+    font-size:3.157rem; letter-spacing:-0.04;
+    text-align:center;
+    color:#fff; 
+    font-weight:700;
+}
+.quiz_bg .quiz .left h3 {
+    font-size: 1.333rem; letter-spacing:-0.04;
+    text-align: center;
+    color:#fff;
+    margin:33px 0 ;
+}
+.quiz_bg .quiz .left #quiz_form {}
+.quiz_bg .quiz .left #quiz_form fieldset {}
+.quiz_bg .quiz .left #quiz_form fieldset ul {}
+.quiz_bg .quiz .left #quiz_form fieldset ul li {margin-bottom: 20px;}
+.quiz_bg .quiz .left #quiz_form fieldset ul li:last-child {margin-bottom: 0;}
+.quiz_bg .quiz .left #quiz_form fieldset ul li label {}
+.quiz_bg .quiz .left #quiz_form fieldset ul li label > span {
+    font-size:1.33rem; letter-spacing: -0.04;
+    color:#fff;
+    margin-left:10px;
+}
+.quiz_bg .quiz .left #quiz_form fieldset ul li label input {
+    appearance: none;
+}
+.quiz_bg .quiz .left #quiz_form fieldset ul li label span {
+    background: url(../images/quiz_un_check.png)
+    no-repeat;
+    padding-left:34px;
+}
+/*상태 선택자 (radio가 체크 될경우 span의 이미지 변경하기)*/
+.quiz_bg .quiz .left #quiz_form fieldset ul li label input:checked+span {
+    background:url(../images/quiz_check.png)
+    no-repeat;
+}
+
+.quiz_bg .quiz .left #quiz_form fieldset #answer_btn {
+    font-size:1.33rem; letter-spacing: -0.04;
+    color:#fff;
+    background-color: #222;
+    border:1px solid none;
+    border-radius:50px;
+    padding:15px 170px;
+    margin-top:33px;
+}
+.quiz_bg .quiz .right {}
+.quiz_bg .quiz .right h2 {
+    text-align: center;
+    border:1px solid none;
+    border-radius:15px 15px 0 0;
+    padding:25px 150px;
+    background: #ff9300;
+}
+.quiz_bg .quiz .right h2 img {width:20px; height:20px;}
+.quiz_bg .quiz .right h2 span {
+    font-size:1.333rem; letter-spacing:-0.04em;
+    color:#fff;
+}
+.quiz_bg .quiz .right .content {
+    border:1px solid none;
+    border-radius:0 0 15px 15px;
+    background: #fff;
+    padding:50px 10px;
+    text-align: center;
+}
+.quiz_bg .quiz .right .content em {
+    font-size:5rem; font-weight: 700;
+    color:#ff7200;
+}
+.quiz_bg .quiz .right .content span {font-size:3.157rem; letter-spacing:-0.04em;}
+.quiz_bg .quiz .right .update {
+    font-size:1.333rem; letter-spacing:-0.04em;
+    margin-top:30px;
+    text-align:center;
+    color:#fff;
+}
+/*--------------------------------------------------------------퀴즈 끝!-------------------------*/
+/*----------------------------------------------------유튜브 영상----------------------------------*/
+.video_bg {
+    background:url(../images/video_bg.png)
+    no-repeat center 70%;
+    background-size:cover;
+}
+.video_bg .video {
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+    width:1200px; margin:0 auto;
+    padding:100px 0;
+}
+.video_bg .video h2 {
+    text-align:center; 
+    font-size:3.157rem; font-weight:700;
+    line-height:90px;
+}
+.video_bg .video iframe {margin:50px 0; width:800px; height:500px;}
+.video_bg .video .btn {
+    border:1px solid none;
+    border-radius:50px;
+    padding:25px 60px;
+    margin-top:75px;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(255,147,0,1) 0%, rgba(255,114,0,1) 100%);
+}
+.video_bg .video .btn span {
+    font-size:1.777rem;
+    color:#fff;
+    letter-spacing:-0.04em;
+    margin-right:10px;
+    font-weight:800;
+}
+.video_bg .video .btn img {width:20px; height:20px;}
+/*-----------------------------------유튜브 영상 끝--------------------------------------------*/
+/*-----------------------------------------50%감소---------------------------------------------*/
+.reduction_bg {
+    background:url(../images/50_bg.png)
+    no-repeat center 70%;
+    background-size:cover;
+}
+.reduction_bg .rdeuction {
+    width: 1200px; margin:0 auto;
+    padding:100px 0;
+}
+.reduction_bg .rdeuction h2 {
+    font-size:3.157rem; font-weight:800;
+    line-height:90px;
+    color:#fff;
+    margin-bottom:50px;
+}
+.reduction_bg .rdeuction h2 span {
+    font-size: 3.157rem; color:#000;
+    font-weight: 700;
+    background-color: #fff;
+    width:142px; height:87px;
+}
+.reduction_bg .rdeuction .contents {
+    font-size:1.777rem; letter-spacing:-0.04em; line-height:60px;
+    color:#fff;
+    margin-bottom:50px;
+}
+.reduction_bg .rdeuction p img {width:1200px; height:600px;}
+/*------------------------------------------------50%감소 끝-----------------------------------------------*/
+/*------------------------------------------------28,27,332------------------------------------------------*/
+.dis_bg {
+    background:#f1f1f1;
+    /* background: skyblue; */
+}
+.dis_bg .disaster {
+    width:1200px; margin:0 auto;
+    padding:100px 0;
+}
+.dis_bg .disaster h2 {
+    font-size:3.157rem;
+    text-align:center;
+    line-height:90px;
+    font-weight: 800;
+}
+.dis_bg .disaster .contents {
+    font-size:1.777rem; letter-spacing: -0.04em;
+    font-weight:600;
+    text-align:center;
+    line-height:60px;
+    margin:80px 0;
+
+}
+.dis_bg .disaster ul {
+    display:flex; 
+    flex-flow:row nowrap;
+
+}
+.dis_bg .disaster ul li {
+    background:#fff;
+    width:calc(33.33% - 40px / 3);
+    margin-right:20px;
+}
+.dis_bg .disaster ul li:last-child {margin-right:0;}
+.dis_bg .disaster ul li .top {
+    height:372px;
+    text-align:center;
+    background-position:center 80%;
+    background-size:cover;
+    color:#fff;
+}
+.dis_bg .disaster ul li:nth-child(1) .top {
+    background-image:url(../images/28.png);
+}
+.dis_bg .disaster ul li:nth-child(2) .top {
+    background-image:url(../images/27.png);
+}
+.dis_bg .disaster ul li:nth-child(3) .top {
+    background-image:url(../images/28.png);
+}
+.dis_bg .disaster ul li .top h3 {
+    font-size:3.157rem;
+    font-weight:700;
+    padding:50px 0;
+}
+.dis_bg .disaster ul li .top p {
+    font-size:1.777rem;
+    
+}
+.dis_bg .disaster ul li .list_contents {
+    font-size:1rem; letter-spacing:-0.04em;
+    line-height:30px;
+    margin:30px 20px;
+    font-weight: 600;
+}
+/*-------------------------------------------28,27,332끝-----------------------------*/
